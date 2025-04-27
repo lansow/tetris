@@ -1,0 +1,68 @@
+.tetrisBoard {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-dark);
+  border: 3px solid var(--border-color);
+  width: 100%;
+  height: 100%;
+}
+
+.boardRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.boardCell {
+  width: 25px;
+  height: 25px;
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid var(--border-color);
+}
+
+/* کلاس‌های رنگی */
+.cellI { background-color: #00FFFF !important; }
+.cellJ { background-color: #0000FF !important; }
+.cellL { background-color: #FF7F00 !important; }
+.cellO { background-color: #FFFF00 !important; }
+.cellS { background-color: #00FF00 !important; }
+.cellT { background-color: #800080 !important; }
+.cellZ { background-color: #FF0000 !important; }
+.cellEmpty { background-color: var(--card-bg) !important; }
+
+.cellChar {
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  text-shadow: 1px 1px 2px black;
+}
+
+/* tetrisboard.module.css */
+.ghostCell {
+  position: relative;
+  opacity: 0.7;
+}
+
+.ghostCell::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  border: 2px dashed rgba(255, 255, 255, 0.7);
+  border-radius: 2px;
+}
+
+.nextPiece {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.tetrisMiniBoard {
+  margin: 10px auto;
+  border: 2px solid #333;
+}

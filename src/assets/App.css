@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Vazirmatn', 'Roboto', sans-serif;
+  direction: rtl;
+}
+
+:root {
+  --primary-color: #6c63ff;
+  --primary-hover: #5a52d5;
+  --bg-dark: #121212;
+  --card-bg: #1e1e1e;
+  --text-color: #e0e0e0;
+  --text-secondary: #a0a0a0;
+  --border-color: #333;
+  --error-color: #ff6b6b;
+  --success-color: #4caf50;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-color);
+  min-height: 100vh;
+  margin: 0;
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 35rem;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.tetris-diplay {
+  background-color: var(--card-bg);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 90vh;
+  min-height: 500px;
+  max-width: 500px;
+  padding: 20px;
+  overflow: hidden;
+}
+
+
+.upper{
+  display: flex;
+  width: 100%;
+  height: 80%;
+  direction: ltr;
+  .main{
+    background-color: var(--border-color);
+    width: 60%;
+    height: 100%;
+  }
+  
+  .sid{
+    background-color: var(--border-color);
+    width: 40%;
+    height: 100%;
+  }
+}
+
+
+.nav{
+  background-color: var(--border-color);
+  width: 100%;
+  height: 20%;
+}
