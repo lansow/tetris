@@ -1,12 +1,89 @@
-# React + Vite
+# بازی تتریس با React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+این پروژه یک نسخه ساده و جذاب از بازی کلاسیک **تتریس** است که با استفاده از **React.js** ساخته شده است.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ویژگی‌ها
 
-## Expanding the ESLint configuration
+- طراحی ماژولار با استفاده از کامپوننت‌های React
+- گرافیک ساده و کاربرپسند
+- نمایش امتیاز فعلی
+- نمایش قطعه بعدی
+- کنترل کامل بازی با کیبورد
+- رابط کاربری واکنش‌گرا
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## اسکرین‌شات
+
+![تصویر بازی تتریس](./file-3x4DKM34XJQaseAuoyqbVu)
+
+---
+
+## نحوه اجرا
+
+برای اجرای پروژه روی سیستم خود مراحل زیر را دنبال کنید:
+
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+npm install
+npm start
+
+سپس در مرورگر خود آدرس زیر را باز کنید:
+
+http://localhost:3000
+
+
+---
+
+کنترل‌های بازی
+
+کلید چپ (←): حرکت به سمت چپ
+
+کلید راست (→): حرکت به سمت راست
+
+کلید پایین (↓): افتادن سریع‌تر قطعه
+
+کلید بالا (↑): چرخش قطعه
+
+دکمه Start: شروع بازی جدید
+
+
+
+---
+
+تکنولوژی‌های استفاده شده
+
+React.js
+
+JavaScript (ES6+)
+
+HTML5
+
+CSS3
+
+
+
+---
+
+مجوز
+
+این پروژه تحت مجوز MIT License منتشر شده است.
+
+
+---
+
+---
+
+**توضیح درباره عکس:**  
+در بخش `![تصویر بازی تتریس](./file-3x4DKM34XJQaseAuoyqbVu)`، جایگزین `./file-3x4DKM34XJQaseAuoyqbVu` باید اسم فایل اسکرین‌شاتت باشه، مثلاً اگر فایل رو توی پروژه ذخیره کردی مثلا توی پوشه `assets` باید بنویسی:  
+`./assets/tetris-screenshot.png`
+
+---
+
+دوست داری در کنارش یک نسخه انگلیسی هم آماده کنم که برای README بین‌المللی‌تر باشه؟ یا یک کاور گرافیکی قشنگ هم برای پروژه طراحی کنیم؟  
+دو خط دیسکریپشن هم میشه اضافه کرد که پروژه‌ات خاص‌تر شه!  
+دوست داری؟
+
