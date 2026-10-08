@@ -71,7 +71,7 @@ export const useGameLogic = () => {
 
 
     // اسپان قطعه جدید با امکان اسپان بالاتر از ماتریس
-    const spawnPiece = useCallback(() => {
+    const spawnPiece = useCallback((boardMatrix = matrix) => {
       const newPiece = nextPiece || createRandomTetromino();
       setNextPiece(createRandomTetromino());
     
@@ -82,7 +82,7 @@ export const useGameLogic = () => {
       };
 
       // بررسی امکان اسپان (حتی در موقعیت بالاتر)
-      const canSpawn = !checkCollision(matrix, newPiece.shape, initialPos);
+      const canSpawn = !checkCollision(boardMatrix, newPiece.shape, initialPos);
       
       if (canSpawn) {
         setCurrentPiece({
@@ -92,7 +92,7 @@ export const useGameLogic = () => {
         updateGhostPiece();
       } else {
         // اگر حتی در موقعیت بالاتر هم نمی‌تواند اسپان شود
-        const canMoveDown = !checkCollision(matrix, newPiece.shape, {
+        const canMoveDown = !checkCollision(boardMatrix, newPiece.shape, {
           ...initialPos,
           y: initialPos.y + 1
         });
@@ -286,7 +286,7 @@ export const useGameLogic = () => {
       setScore(0);
       setStatus(true);
       setDropTime(1000);
-      spawnPiece();
+      spawnPiece(newMatrix);
     },
     endGame: () => setStatus(false),
     moveLeft: () => movePiece('left'),
